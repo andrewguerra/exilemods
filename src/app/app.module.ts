@@ -6,16 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { ItemchooserComponent } from './itemchooser/itemchooser.component';
+import { ItemselectComponent } from './itemchooser/itemselect/itemselect.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ItemchooserComponent,
+    ItemselectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

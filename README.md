@@ -1,4 +1,8 @@
-# ExileModsApp
+# ExileMods
+
+This is a website for keeping track of Item mods in Path of Exile.
+
+# Notes:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 

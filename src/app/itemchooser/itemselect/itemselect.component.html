@@ -1,0 +1,8 @@
+<mat-form-field class="itemchooser-field" color="accent">
+    <mat-label>{{itemSelectLabel}}</mat-label>
+    <mat-select>
+        <mat-option *ngFor="let itemOption of itemSelectOptions" [value]="itemOption">
+            {{itemOption}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>

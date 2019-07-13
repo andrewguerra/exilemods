@@ -1,0 +1,14 @@
+version: '3.2'
+services:
+  web:
+    build: .
+    image: exilemods
+    container_name: exile-mods
+    ports:
+      - 4200:4200
+    volumes:
+      - type: bind
+        source: .
+        target: /exile-mods-app
+    environment:
+      - CHOKIDAR_USEPOLLING=1

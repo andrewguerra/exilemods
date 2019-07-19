@@ -1,9 +1,9 @@
 <section class="itemchooser-section">
     <h3>Select an Item!</h3>
 
-    <app-itemselect [itemSelectLabel]="'Item Type'" [itemSelectOptions]="itemTypes"></app-itemselect>
-    <app-itemselect [itemSelectLabel]="'Item Base'" [itemSelectOptions]="itemBases"></app-itemselect>
+    <app-itemselect [itemSelectLabel]="'Item Type'" [itemSelectOptions]="itemGroups"></app-itemselect>
+    <app-itemselect [itemSelectLabel]="'Item Base'" [itemSelectOptions]="itemTypes"></app-itemselect>
     
-    <button class="itemchooser-button" mat-raised-button color="accent">Search!</button>
+    <div><button class="itemchooser-button" mat-raised-button color="accent" (click)="onClick()">Search!</button></div>
    
 </section>

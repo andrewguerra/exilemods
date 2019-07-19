@@ -1,0 +1,31 @@
+{
+    "Item Group": [
+        {
+            "Group Name": "Weapons",
+            "Types": [
+                "Axe",
+                "Bow",
+                "Claw",
+                "Dagger",
+                "Mace"
+            ]
+        },
+        {
+            "Group Name": "Armour",
+            "Types": [
+                "Body Armour",
+                "Boots",
+                "Gloves",
+                "Helmet"
+            ]
+        },
+        {
+            "Group Name": "Accessories",
+            "Types": [
+                "Amulet",
+                "Belt",
+                "Ring"
+            ]
+        }
+    ]
+}

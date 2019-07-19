@@ -1,0 +1,9 @@
+{
+    "Item Data": {
+        "Item Implicits" : [
+            "+ amount health",
+            "- mana cost",
+            "test"
+        ]
+    }
+}

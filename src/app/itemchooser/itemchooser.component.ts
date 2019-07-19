@@ -10,6 +10,7 @@ export class ItemchooserComponent implements OnInit {
 
   itemGroups: string[] = [];
   itemTypes: string[] = [];
+  itemDetails: any;
 
   constructor(private itemService: ItemserviceService){
   }
@@ -42,6 +43,8 @@ export class ItemchooserComponent implements OnInit {
   onClick() {
     this.itemService.getItemData().subscribe(item => {
       console.log(item);
+
+      this.itemDetails = JSON.stringify(item);
     });
   }
 

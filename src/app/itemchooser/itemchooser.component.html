@@ -5,5 +5,8 @@
     <app-itemselect [itemSelectLabel]="'Item Base'" [itemSelectOptions]="itemTypes"></app-itemselect>
     
     <div><button class="itemchooser-button" mat-raised-button color="accent" (click)="onClick()">Search!</button></div>
+
+    <br> <!-- remove this lol -->
+    <div class="itemchooser-button" *ngIf="itemDetails">{{ itemDetails }}</div>
    
 </section>

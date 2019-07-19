@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class ItemserviceService {
 
   // itemGroupUrl = 'http://localhost:5000/';
-  itemGroupUrl = 'http://localhost:4200/assets/itemgroups.json';
+  itemGroupUrl = environment.apiUrl + '/assets/itemgroups.json';
 
   constructor(private http: HttpClient) { }
 
@@ -15,7 +16,7 @@ export class ItemserviceService {
     return this.http.get(this.itemGroupUrl);
   }
 
-  itemDataUrl = 'http://localhost:4200/assets/itemdata.json';
+  itemDataUrl = environment.apiUrl + '/assets/itemdata.json';
 
   getItemData() {
     return this.http.get(this.itemDataUrl);
